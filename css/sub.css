@@ -1,0 +1,789 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: black;}
+
+.clearFix:after{
+    content: "";
+    clear: both;
+    display: block;
+
+}
+body{
+    font-family: 'SUIT', sans-serif;
+    font-weight: 500;
+
+}
+
+#section{
+    width: 100%;
+    /* margin-bottom: 90vh; */
+    /* height: 155vh; */
+    position: relative;
+}
+#section .spon_tab_gr{
+    width: 100%;
+    /* height: 250vh; */
+    margin-top: 10%;
+}
+#section .spon_bn{
+    width: 90%;
+    height: 30vh;
+    margin: 0 auto;
+    background-image: url(../images/sub_bn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+} 
+#section .spon_bn>h1{
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 100px;
+    text-shadow: 3px 1px 5px gray;
+}
+#section .spon_tab_gr .spon_tab_menu{
+    width: 70%;
+    height: 8vh;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+#section .spon_tab_gr .spon_tab_menu li{
+    width: 22%;
+    height: 8vh;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 8vh;
+    border-radius: 50px;
+    color: rgb(156, 156, 156);
+    position: relative;
+}
+#section .spon_tab_gr .spon_tab_menu li:after{
+    content:"";
+    display: block;
+    width:2px; height:30px;
+    background-color: rgb(195, 195, 195);
+    position: absolute;
+    right:-30%; top:30%;
+}
+#section .spon_tab_gr .spon_tab_menu li:nth-child(3):after{
+    display: none;
+}
+#section .spon_tab_gr .spon_tab_menu li.active{
+    width: 26%;
+    height: 8vh;
+    font-size: 1.5vw;
+    background-color:#009A6E;
+    text-align: center;
+    line-height: 8vh;
+    border-radius: 50px;
+    box-shadow: 3px 5px 5px rgba(128, 128, 128, 0.597);
+}
+#section .spon_tab_gr .spon_tab_menu li a{
+    color: rgb(156, 156, 156);
+}
+#section .spon_tab_gr .spon_tab_menu li.active a{
+    color: rgb(255, 255, 255);
+}
+#section .spon_tab_gr .spon_tab_contents{
+    width: 100%;
+    position: relative;
+
+}
+#section .spon_tab_gr .spon_tab_contents>li{
+    width: 100%;
+    position: absolute;
+    left:0; top:0;
+
+    display: none;
+}
+#section .spon_tab_gr .spon_tab_menu_mb{
+    display: none;
+}
+/* ----------실시간 후기----------------------------------------- */
+#section .spon_tab_gr .spon_tab_contents .spon_story{
+    width: 100%;
+    /* height: 200vh; */
+    margin-bottom: 30vh;
+    /* background-color: aqua; */
+    display: block;
+    position: relative;
+    transition: all 0.3s;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .spon_txt_gr{
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    /* border:1px solid red; */
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt{
+    /* width: 1920px; */
+    /* background-color: #009B42; */
+    /* height: 35vh; */
+    /* margin: 0 auto; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt li{
+    width: 500px;
+    height: 35vh;
+    /* height: 430px; */
+    /* margin-right: 30px; */
+    /* border: 1px solid red; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt li.swiper-slide{
+    /* width: 305px; */
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt .bg1{background-image: url(../images/sub_spon_txt1.png);}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt .bg2{background-image: url(../images/sub_spon_txt2.png);}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt .bg3{background-image: url(../images/sub_spon_txt3.png);}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt .bg4{background-image: url(../images/sub_spon_txt4.png);}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt .bg5{background-image: url(../images/sub_spon_txt5.png);}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt .bg6{background-image: url(../images/sub_spon_txt6.png);}
+#section .spon_tab_gr .spon_tab_contents .spon_story .story_txt .bg7{background-image: url(../images/sub_spon_txt7.png);}
+
+#section .spon_tab_gr .spon_tab_contents .spon_story .play_bar{
+    width: 60%;
+    height: 1vh;
+    background-color: rgb(202, 202, 202);
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    position: absolute;
+    bottom: -70px; left:50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .play_bar>p{
+    width: 100%;
+    height: 1vh;
+    border-radius: 50px;
+    background-color: #009A6E;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .control_bt{
+    width: 10%;
+    height: 3vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 20%; bottom: -15%;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .control_bt li{
+    width: 15%;
+    height: 3vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .control_bt .next{
+    background-image: url(../images/sub_next.png);
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .control_bt .prev{
+    background-image: url(../images/sub_pev.png);
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .control_bt .stop{
+    background-image: url(../images/sub_pause.png);
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .control_bt .play{
+    background-image: url(../images/sub_play01.png);
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .attend{
+    width: 10%;
+    height: 6vh;
+    background-color: #009B42;
+    text-align: center;
+    line-height: 6vh;
+    font-size: 1vw;
+    font-weight: bold;
+    position: absolute;
+    left: 46%; 
+    bottom: -20vh;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_story .attend>a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* ------------------나눔가게 -----------------------------------------------*/
+#section .spon_tab_gr .spon_tab_contents .nanumstore{
+    width: 100%;
+    /* border: 5px solid blue; */
+    position: relative;
+    /* height: 95vh; */    
+
+    /* display:block; */
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div{
+    position: relative;
+    height: 95vh;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div>div{
+    width: 100%;
+    /* padding-bottom: 60%; */
+    height: 850px;
+    /* border: 1px solid red; */
+    /* margin: 0 auto; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    /* background-position: 0px -20px; */
+    background-attachment: fixed;
+    position: absolute;
+    left: 0px; top: 0px;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_gr{
+    width: 70%;
+    /* border: 1px solid rgb(255, 0, 255); */
+    height: 55vh;
+    margin: 0 auto;
+    position: absolute;
+    left: 20%; top: 20vh;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div .cafe{
+    background-image: url(../images/sub_nanum_bg1.jpg);
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div .hospital{
+    background-image: url(../images/sub_nanum_bg2.jpg);
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div .flower{
+    background-image: url(../images/sub_nanum_bg3.jpg);
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt{
+    color: white;
+    text-align: left;
+    width: 40%;
+    height: 50vh;
+    /* border: 1px solid red; */
+    line-height: 33px;
+    /* position: absolute;
+    left: 5%; top: 30%; */
+
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt h3{
+    font-size: 2.5vw;
+    margin-top: 10vh;
+    margin-bottom: 6%;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt h4{
+    font-size: 1vw;
+    margin-bottom: 1%;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt p{
+    font-size: 0.9vw;
+    margin-bottom: 4%;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr{
+    width: 20%;
+    padding: 1.5%;
+    font-size: 1vw;
+    border: 2px solid white;
+    text-align: center;
+    /* line-height: 1.2vw; */
+    border-radius: 10px;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr .look_btn{
+    color: white;
+}
+
+#section .spon_tab_gr .spon_tab_contents .nanumstore .card_gr div{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_back{
+    width: 40%;
+    height: 50vh;
+    background-image: url(../images/sub_card_back01.png);
+    position: absolute;
+    right: 10%; top:0%;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_front{
+    width: 25%;
+    height: 50vh;
+    background-image: url(../images/sub_nanum_front1.png);
+    position: absolute;
+    right:6%; top: 30%;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_back{
+    width: 40%;
+    height: 50vh;
+    background-image: url(../images/sub_card_back02.png);
+    position: absolute;
+    right: 10%; top:0%;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_front{
+    width: 25%;
+    height: 50vh;
+    background-image: url(../images/sub_nanum_front2.png);
+    position: absolute;
+    right:6%; top: 30%;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_back{
+    width: 40%;
+    height: 50vh;
+    background-image: url(../images/sub_card_back03.png);
+    position: absolute;
+    right: 10%; top:0%;
+}
+#section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_front{
+    width: 25%;
+    height: 50vh;
+    background-image: url(../images/sub_nanum_front3\ .png);
+    position: absolute;
+    right:6%; top:30%;
+}
+
+
+
+
+
+
+
+/* -----------대표후원자----------------------------------- */
+#section .spon_tab_gr .spon_tab_contents .spon_mp4_first{
+    width: 100%;
+    /* display: block; */
+    position: relative;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4{
+    width: 55%;
+    margin: 0 auto;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li{
+    border-bottom: 3px solid rgba(128, 128, 128, 0.254);
+    background-color: #F3ECDE;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr{
+    height: 0;
+    padding-bottom: 27.5%;
+    display: flex;
+    justify-content: space-between;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li>div>div{
+    width: 40%;
+    height: 0;
+    padding-bottom: 25%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    /* background-color: #009A6E; */
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li>div .spon_mp4_1{
+    background-image: url(../images/sub_mp4_01.png);
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li>div .spon_mp4_2{
+    background-image: url(../images/sub_mp4_02.png);
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li>div .spon_mp4_3{
+    background-image: url(../images/sub_mp4_03.png);
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li>div .spon_mp4_4{
+    background-image: url(../images/sub_mp4_04.png);
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr .spon_mp4_txt{
+    width: 30%;
+    height: 10vh;
+    text-align: right;
+    line-height: 30px;
+    color: #535353;
+    margin-right: 8%;
+    margin-top: 5%;
+    /* border: 1px solid red; */
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr .spon_mp4_txt h4{
+    font-size: 1.5vw;
+    line-height: 150%;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr .spon_mp4_txt p{
+    font-size: 1vw;
+    margin-top: 3%;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4{
+    width: 100%;
+    height: 50vh;
+    background-color: #FFFAF0;
+    display: none;
+    border-top: 3px rgba(128, 128, 128, 0.254);
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li:nth-child(1) .mp4{
+    display: block;
+}
+#section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4>iframe{
+    width: 80%; height: 90%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+
+/* ------------테블릿 버전----------------------------------------------------- */
+
+@media all and (min-width: 769px) and (max-width:1280px){
+    #section .spon_bn{
+        width: 100%;
+        height: 28vh;
+    }
+    #section .spon_tab_gr .spon_tab_menu{
+        height: 6vh;
+        margin-top: 100px;
+    }
+    #section .spon_tab_gr .spon_tab_menu li{
+        font-size: 2vw;
+        line-height: 6vh;
+    }
+    #section .spon_tab_gr .spon_tab_menu li:after{
+        height: 20px;
+        top: 25%;
+    }
+    #section .spon_tab_gr .spon_tab_menu li.active{
+        height: 6vh;
+        font-size: 2vw;
+        line-height: 6vh;
+    }
+    #section .spon_tab_gr .spon_tab_menu_mb{
+        display: none;
+    }
+    /* -----테블릿 버전 실시간 후기------------------------------------------------ */
+    #section .spon_tab_gr .spon_tab_contents .spon_story .spon_txt_gr{
+        width: 100%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .story_txt{
+        width: 100%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .story_txt li{
+        background-size: 90%;
+        height: 40vh;
+        /* border: 1px solid red; */
+        /* width: 100px; */
+        /* margin-right: 0; */
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .control_bt{
+        width: 15%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .control_bt li{
+        background-size: 100%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .attend{
+        width: 15%;
+        font-size: 2vw;
+        left: 44%;
+    }
+
+
+    /* ------------나눔가게 테블릿버전-------------------- */
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div{
+        height: 780px;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt{
+        width: 50%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt h3{
+        font-size: 5vw;
+        line-height: 7vw;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt h4{
+        font-size: 3vw;
+        margin-bottom: 15%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt p{
+        display: none;
+        
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr{
+        font-size: 1.5vw;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_back,
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_back,
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_back{
+        width: 57%;
+        right: -6%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_front,
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_front,
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_front{
+        width: 30%;
+        right: -5%;
+    }
+
+    /* ------------대표후원자 테블릿버전------------------------------------- */
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li:nth-child(4){
+        display: none;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr{
+        /* height: 20vh; */
+    }
+}
+
+
+
+/* --------------모바일 버전------------------------------------------------ */
+@media all and (max-width:768px){
+
+    /* ----모바일 탭메뉴---------------------------- */
+    #section .spon_bn{
+        width: 100%;
+        height: 25vh;
+        background-position: 20%;
+    }
+    #section .spon_bn>h1{
+        font-size: 7vw;
+    }
+    #section .spon_tab_gr .spon_tab_menu{
+        display: none;
+    }
+    #section .spon_tab_gr .spon_tab_menu_mb{
+        display: block;
+        margin-left: -5px;
+    }
+    #section .spon_tab_gr .spon_tab_menu_mb li{
+        height: 5vh;
+        width: 17%;
+        margin-bottom: 1.7%;
+        border-radius: 0px 7px 20px 0px;
+        text-align: center;
+        font-size: 0vw;
+        line-height: 5vh;
+        background-color: #28bc929f;
+        box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+        border:3px solid #fff;
+        transition: all 0.3s;
+        background-size: 46%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    #section .spon_tab_gr .spon_tab_menu_mb li:nth-child(1){
+        background-image: url(../images/sub_chat_icon.png);
+    }
+    #section .spon_tab_gr .spon_tab_menu_mb li:nth-child(2){
+        background-image: url(../images/sub_nannum_icon.png);
+    }
+    #section .spon_tab_gr .spon_tab_menu_mb li:nth-child(3){
+        background-image: url(../images/sub_spon3_icon.png);
+    }
+    #section .spon_tab_gr .spon_tab_menu_mb li.touch{
+        width: 25%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+        background-color: #009A6E;
+        font-size: 3vw;
+    }
+    #section .spon_tab_gr .spon_tab_menu_mb li a{
+        color: white;
+    }
+
+    /* -------모바일 실시간 후기-------------- */
+
+    #section .spon_tab_gr .spon_tab_contents .spon_story .spon_txt_gr{
+        width: 100%;
+        /* background-color: antiquewhite; */
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .story_txt{
+        
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .story_txt li{
+        background-size: 77%;
+        height: 380px;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .play_bar{
+        bottom: 0;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .control_bt li{
+        width: 50%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .attend{
+        width: 20%;
+        font-size: 3VW;
+        left: 40%;
+    }
+
+    /* ----------모바일 나눔가게---------------------- */
+
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div{
+        height: 65vh;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div{
+        height: 65vh;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_gr{
+        top: 0;
+        left: 0%;
+        width: 100%;
+        position: relative;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div .cafe{
+        background:none;
+        background-color: #fdfaec;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div .hospital{
+        background:none;
+        background-color:#fdfaec;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div .flower{
+        background:none;
+        background-color:#fdfaec;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt h3{
+        display: none;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt h4{
+        display: none;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt p{
+        display: none;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr{
+        position: absolute;
+        left: 15%; bottom: 0%;
+        border: 3px solid rgb(147, 147, 147);
+        font-size: 3.5vw;
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr:hover{
+        background-color: #009A6E;
+        border: none;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr .look_btn{
+        color:rgb(147, 147, 147);
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr:hover .look_btn{
+        color:rgb(255, 255, 255);
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_back,
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_back,
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_back{
+        width: 100%;
+        right: 0%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_front,
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_front,
+    #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_front{
+        width: 50%;
+        top: 31%;
+    }
+
+    /* ---------모바일 대표후원자---------------------------------------- */
+    
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        /* background-color: aqua; */
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li{
+        background: none;
+        border: none;
+        width: 100%;
+        /* border:1px solid red; */
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li:nth-child(3),
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li:nth-child(4){
+        display: none;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr{
+        flex-direction: column;
+        /* margin-left: -50px; */
+        height:250px;
+        padding-bottom: 0px;
+        position: relative;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li>.spon_mp4_gr>div{
+        width: 100%;
+        padding-bottom: 60%;
+        /* border: 1px solid pink; */
+        margin-left: 0; margin-top: 0;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr .spon_mp4_txt{
+        width: 100%;
+        height: 0;
+        padding-bottom: 15%;
+        /* border:1px solid blue; */
+        margin-top: 0%;
+        line-height: 0;
+        /* display: none; */
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr .spon_mp4_txt h4{
+        font-size: 3vw;
+        line-height: 140%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr .spon_mp4_txt p{
+        display: none;
+    }
+    
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4{
+        background:none;
+        /* border: 1px solid blue; */
+        height: 40vh;
+        position: absolute;
+        left: 0; top: 10%;
+        z-index: 1;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li:nth-child(1) .mp4{
+        display: block;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4>iframe{
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+
+}
+
+@media all and (min-width:501px) and (max-width:768px){
+    #section .spon_tab_gr .spon_tab_contents .spon_story{
+        width: 70%; margin: 0 auto;     
+        margin-top: -100px;   
+        
+        /* padding-bottom: 100px; */
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .spon_txt_gr{
+    
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .story_txt li{
+        padding-top: 50px;
+    }
+
+    #section .spon_tab_gr .spon_tab_contents .spon_story .attend{
+        width: 20%;
+        font-size: 3VW;
+        left: 40%;
+        bottom:-80px;
+        z-index: 999999999;
+    }
+    #footer{
+        padding-top: 100px;
+    }
+}
+@media all and (min-width:505px) and (max-width:635px){
+    #section .spon_tab_gr .spon_tab_contents .spon_story{
+        width: 88%;    
+        margin-top: -100px;   
+    }
+}
+@media all and (max-width:500px){
+    #section .spon_tab_gr .spon_tab_contents .spon_story{
+        margin-bottom: 150px;
+    }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .attend{
+        bottom: -90px;
+    }
+    
+}
