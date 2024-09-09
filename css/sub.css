@@ -631,7 +631,8 @@ body{
     /* ----------모바일 나눔가게---------------------- */
 
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div{
-        height: 65vh;
+        height: 110vw;
+        /* border: 1px solid blue; */
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div{
         height: 65vh;
@@ -641,7 +642,6 @@ body{
         left: 0%;
         width: 100%;
         position: relative;
-        border: 1px solid green;
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div .cafe{
         background:none;
@@ -691,7 +691,7 @@ body{
         height: 90vw;
         top: 0%;
         right: 0%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_front,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_front,
