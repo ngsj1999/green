@@ -168,12 +168,12 @@
                 <li class="quick_hide">
                     <div class="menu_ic"></div>
                     <div class="menu_txt"><a href="#">결연후원</a></div>
-                </li class="quick_hide">
+                </li>
                 <li>
                     <div class="menu_ic"></div>
                     <div class="menu_txt"><a href="#">정기후원</a></div>
                 </li>
-                <li>
+                <li class="quick_hide">
                     <div class="menu_ic"></div>
                     <div class="menu_txt"><a href="#">일시후원</a></div>
                 </li>
@@ -302,7 +302,7 @@
                                 </div>
                             </div>
                             <div class="mp4">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dw29NBspPUs?si=jU0gMnM6lpwpyT28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dw29NBspPUs?si=jU0gMnM6lpwpyT28&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </li>
                         <li>
@@ -347,7 +347,7 @@
                                 </div>
                             </div>
                             <div class="mp4">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/nSOoIl1Hc7M?si=hNXZPC2sM1EhWkxb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/nSOoIl1Hc7M?si=hNXZPC2sM1EhWkxb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen playsinline></iframe>
                             </div>
                         </li>
                     </ul>
@@ -434,20 +434,36 @@
             el: ".swiper-pagination",
             type: "progressbar",
         },
+
         breakpoints:{
             1025:{
                 slidesPerView:'3',
                 spaceBetween :20,
                 centeredSlides: false,
             },
+            820:{
+                slidesPerView:'3',
+                spaceBetween :2,
+                centeredSlides: true,
+            },
             769:{
                 slidesPerView:'3',
                 spaceBetween :2,
                 centeredSlides: true,
             },
+            768:{
+                slidesPerView:'1',
+                spaceBetween :2,
+                centeredSlides: true,
+            },
             481:{
                 slidesPerView:'1',
-                spaceBetween :10,
+                spaceBetween :2,
+                centeredSlides: false,
+            },
+            430:{
+                slidesPerView:'1',
+                spaceBetween :2,
                 centeredSlides: false,
             },
         },

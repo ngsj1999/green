@@ -28,7 +28,7 @@ body{
 }
 #section .spon_bn{
     width: 90%;
-    height: 30vh;
+    height: 15vw;
     margin: 0 auto;
     background-image: url(../images/sub_bn.png);
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body{
     color: white;
     font-size: 3vw;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 120px;
     text-shadow: 3px 1px 5px gray;
 }
 #section .spon_tab_gr .spon_tab_menu{
@@ -229,12 +229,12 @@ body{
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore>div{
     position: relative;
-    height: 95vh;
+    height:50vw;
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div{
     width: 100%;
     /* padding-bottom: 60%; */
-    height: 850px;
+    height: 50vw;
     /* border: 1px solid red; */
     /* margin: 0 auto; */
     background-repeat: no-repeat;
@@ -251,7 +251,7 @@ body{
     height: 55vh;
     margin: 0 auto;
     position: absolute;
-    left: 20%; top: 20vh;
+    left: 20%; top: 10vw;
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore>div .cafe{
     background-image: url(../images/sub_nanum_bg1.jpg);
@@ -288,11 +288,11 @@ body{
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr{
     width: 20%;
-    padding: 1.5%;
+    height: 3vw;
     font-size: 1vw;
     border: 2px solid white;
     text-align: center;
-    /* line-height: 1.2vw; */
+    line-height: 3vw;
     border-radius: 10px;
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr .look_btn{
@@ -306,45 +306,45 @@ body{
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_back{
     width: 40%;
-    height: 50vh;
+    height: 50vw;
     background-image: url(../images/sub_card_back01.png);
     position: absolute;
-    right: 10%; top:0%;
+    right: 10%; top:-50%;
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_front{
     width: 25%;
-    height: 50vh;
+    height: 50vw;
     background-image: url(../images/sub_nanum_front1.png);
     position: absolute;
-    right:6%; top: 30%;
+    right:6%; top:-20%;
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_back{
     width: 40%;
-    height: 50vh;
+    height: 50vw;
     background-image: url(../images/sub_card_back02.png);
     position: absolute;
-    right: 10%; top:0%;
+    right: 10%; top:-50%;
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_front{
     width: 25%;
-    height: 50vh;
+    height: 50vw;
     background-image: url(../images/sub_nanum_front2.png);
     position: absolute;
-    right:6%; top: 30%;
+    right:6%; top: -20%;
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_back{
     width: 40%;
-    height: 50vh;
+    height: 50vw;
     background-image: url(../images/sub_card_back03.png);
     position: absolute;
-    right: 10%; top:0%;
+    right: 10%; top:-50%;
 }
 #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_front{
     width: 25%;
-    height: 50vh;
+    height: 50vw;
     background-image: url(../images/sub_nanum_front3\ .png);
     position: absolute;
-    right:6%; top:30%;
+    right:6%; top:-20%;
 }
 
 
@@ -416,7 +416,7 @@ body{
 }
 #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4{
     width: 100%;
-    height: 50vh;
+    height: 30vw;
     background-color: #FFFAF0;
     display: none;
     border-top: 3px rgba(128, 128, 128, 0.254);
@@ -436,7 +436,10 @@ body{
 @media all and (min-width: 769px) and (max-width:1280px){
     #section .spon_bn{
         width: 100%;
-        height: 28vh;
+        height: 28vw;
+    }
+    #section .spon_bn>h1{
+        font-size: 5vw;
     }
     #section .spon_tab_gr .spon_tab_menu{
         height: 6vh;
@@ -487,7 +490,13 @@ body{
 
     /* ------------나눔가게 테블릿버전-------------------- */
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div{
-        height: 780px;
+        height:70vw;
+        background-size: 150%;
+        background-position: 50% 80%;
+    }
+    #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_gr{
+        height: 0vw;
+        top: 0vw;
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_txt{
         width: 50%;
@@ -506,6 +515,7 @@ body{
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr{
         font-size: 1.5vw;
+        width: 30%;
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_back,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_back,
@@ -516,8 +526,8 @@ body{
     #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_front,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_front,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_front{
-        width: 30%;
-        right: -5%;
+        width: 30%; 
+        right: -7%;
     }
 
     /* ------------대표후원자 테블릿버전------------------------------------- */
@@ -648,6 +658,8 @@ body{
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .loo_btn_gr{
         position: absolute;
+        height: 10vw;
+        line-height: 10vw;
         left: 15%; bottom: 0%;
         border: 3px solid rgb(147, 147, 147);
         font-size: 3.5vw;
@@ -668,13 +680,16 @@ body{
     #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_back,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_back{
         width: 100%;
+        height: 100vw;
+        top: 10%;
         right: 0%;
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_front,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_front,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_front{
-        width: 50%;
-        top: 31%;
+        width: 50%; height: 100vw;
+        top: 30%; right:0%;
+
     }
 
     /* ---------모바일 대표후원자---------------------------------------- */
@@ -712,7 +727,7 @@ body{
     #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr .spon_mp4_txt{
         width: 100%;
         height: 0;
-        padding-bottom: 15%;
+        /* padding-bottom: 15%; */
         /* border:1px solid blue; */
         margin-top: 0%;
         line-height: 0;
@@ -727,15 +742,16 @@ body{
     }
     
     #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4{
-        background:none;
+        /* background:none; */
         /* border: 1px solid blue; */
+        padding: 20vw 0;
         height: 40vh;
         position: absolute;
-        left: 0; top: 10%;
+        left: 0; top:0;
         z-index: 1;
     }
     #section .spon_tab_gr .spon_tab_contents .spon_mp4>li:nth-child(1) .mp4{
-        display: block;
+        display: none;
     }
     #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4>iframe{
         width: 100%;
