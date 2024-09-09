@@ -423,7 +423,7 @@ body{
     border-top: 3px rgba(128, 128, 128, 0.254);
 }
 #section .spon_tab_gr .spon_tab_contents .spon_mp4>li:nth-child(1) .mp4{
-    display: block;
+    display: none;
 }
 #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4>iframe{
     width: 80%; height: 90%;
