@@ -249,7 +249,7 @@ body{
 #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_gr{
     width: 70%;
     /* border: 1px solid rgb(255, 0, 255); */
-    height: 55vh;
+    height: 25vw;
     margin: 0 auto;
     position: absolute;
     left: 20%; top: 10vw;
@@ -632,7 +632,6 @@ body{
 
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div{
         height: 110vw;
-        /* border: 1px solid blue; */
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div{
         height: 65vh;
@@ -641,7 +640,9 @@ body{
         top: 0;
         left: 0%;
         width: 100%;
+        height: 110vw;
         position: relative;
+        /* border: 1px solid blue; */
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div .cafe{
         background:none;
@@ -668,7 +669,7 @@ body{
         position: absolute;
         height: 10vw;
         line-height: 10vw;
-        left: 15%; bottom:0%;
+        left: 15%; bottom:10%;
         border: 3px solid rgb(147, 147, 147);
         font-size: 3.5vw;
         font-weight: bold;
