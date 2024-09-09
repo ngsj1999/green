@@ -554,7 +554,7 @@ body{
     }
     #section .spon_bn>h1{
         font-size: 7vw;
-        line-height: 60vw;
+        line-height: 65vw;
     }
     #section .spon_tab_gr .spon_tab_menu{
         display: none;
@@ -641,7 +641,7 @@ body{
         left: 0%;
         width: 100%;
         position: relative;
-        /* border: 1px solid green; */
+        border: 1px solid green;
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div .cafe{
         background:none;
@@ -689,7 +689,7 @@ body{
     #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_back{
         width: 100%;
         height: 100vw;
-        top: 0%;
+        top: -5%;
         right: 0%;
         /* border: 1px solid red; */
     }
