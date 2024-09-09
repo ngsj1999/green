@@ -28,18 +28,19 @@ body{
 }
 #section .spon_bn{
     width: 90%;
-    height: 15vw;
+    height: 20vw;
     margin: 0 auto;
     background-image: url(../images/sub_bn.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 } 
 #section .spon_bn>h1{
     color: white;
     font-size: 3vw;
     text-align: center;
-    padding-top: 120px;
+    line-height: 25vw;
+    /* padding-top: 120px; */
     text-shadow: 3px 1px 5px gray;
 }
 #section .spon_tab_gr .spon_tab_menu{
@@ -436,10 +437,11 @@ body{
 @media all and (min-width: 769px) and (max-width:1280px){
     #section .spon_bn{
         width: 100%;
-        height: 28vw;
+        height: 30vw;
     }
     #section .spon_bn>h1{
         font-size: 5vw;
+        line-height: 40vw;
     }
     #section .spon_tab_gr .spon_tab_menu{
         height: 6vh;
@@ -547,12 +549,12 @@ body{
     /* ----모바일 탭메뉴---------------------------- */
     #section .spon_bn{
         width: 100%;
-        height: 55vw;
+        height: 50vw;
         background-position: 30% 10%;
     }
     #section .spon_bn>h1{
         font-size: 7vw;
-        line-height: 5vw;
+        line-height: 60vw;
     }
     #section .spon_tab_gr .spon_tab_menu{
         display: none;
@@ -666,7 +668,7 @@ body{
         position: absolute;
         height: 10vw;
         line-height: 10vw;
-        left: 15%; bottom: 50px;
+        left: 15%; bottom: 0px;
         border: 3px solid rgb(147, 147, 147);
         font-size: 3.5vw;
         font-weight: bold;
