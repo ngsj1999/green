@@ -547,11 +547,12 @@ body{
     /* ----모바일 탭메뉴---------------------------- */
     #section .spon_bn{
         width: 100%;
-        height: 25vh;
-        background-position: 20%;
+        height: 55vw;
+        background-position: 30% 10%;
     }
     #section .spon_bn>h1{
         font-size: 7vw;
+        line-height: 5vw;
     }
     #section .spon_tab_gr .spon_tab_menu{
         display: none;
@@ -620,6 +621,10 @@ body{
         font-size: 3VW;
         left: 40%;
     }
+    #section .spon_tab_gr .spon_tab_contents .spon_story .active{
+        height: 100px;
+        width: 100px;
+    }
 
     /* ----------모바일 나눔가게---------------------- */
 
@@ -634,6 +639,7 @@ body{
         left: 0%;
         width: 100%;
         position: relative;
+        /* border: 1px solid green; */
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div .cafe{
         background:none;
@@ -660,7 +666,7 @@ body{
         position: absolute;
         height: 10vw;
         line-height: 10vw;
-        left: 15%; bottom: 0%;
+        left: 15%; bottom: 50px;
         border: 3px solid rgb(147, 147, 147);
         font-size: 3.5vw;
         font-weight: bold;
@@ -681,15 +687,16 @@ body{
     #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_back{
         width: 100%;
         height: 100vw;
-        top: 10%;
+        top: 0%;
         right: 0%;
+        /* border: 1px solid red; */
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_front,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_front,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_front{
         width: 50%; height: 100vw;
-        top: 30%; right:0%;
-
+        top: 20%; right:0%;
+        /* border: 1px solid rgb(38, 0, 255); */
     }
 
     /* ---------모바일 대표후원자---------------------------------------- */
