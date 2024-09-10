@@ -118,12 +118,12 @@ $(document).ready(function(){
         $(".campain_bn>li:first-child").stop().fadeOut().next().fadeIn().end(1000).appendTo(".campain_bn")
         }, 4000);
 
-        setInterval(function(){
-            if(i == countTwo-1){
-                i=0;
-            }else{ i++; }
-            point();
-        });
+        // setInterval(function(){
+        //     if(i == countTwo-1){
+        //         i=0;
+        //     }else{ i++; }
+        //     point();
+        // });
 
     let autoSlide = setInterval(function(){
         if(i == count-1){

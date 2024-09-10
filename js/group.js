@@ -17,6 +17,19 @@ $(document).ready(function(){
         $(".quick_menu").stop().fadeToggle();
     });
 
+    $(".quick_btn_tab").click(function(){
+        $(".quick_menu_tab").stop().fadeToggle();
+    });
     // ---------------------퀵메뉴-----------------------//
+    $(window).scroll(function(){
+        let down = $("#footer").offset().top;
+        console.log(down);
+        let quick = $(document).scrollTop();
 
+        if(quick > down-1000){
+            $(".quick").stop().fadeOut();
+        }else{
+            $(".quick").stop().fadeIn();
+        }
+    });
     });
