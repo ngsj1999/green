@@ -319,14 +319,15 @@ body{font-family: 'SUIT', sans-serif;}
     }
 
     /* ----------------헤더--------------------- */
-    
+
     #section .quick>.quick_menu>li.quick_hide{display: none;}
     #section .quick>.quick_menu>li{margin-bottom: 10px;}
     #section .quick>.quick_menu>li>div:last-child>a{padding-left: 10%;}
     #section .quick>.quick_menu>li>div:last-child>a{ font-size: 12px; line-height: 35px;}
     #section .quick>.quick_menu>li>div:last-child{left: -80%;}
     #section .quick>.quick_menu>li:hover .menu_ic{left: -105%;}
-
+    /* #section .quick .quick_web .quick_btn{display: none;} */
+   
     /* -----------------섹션------------------- */
     
     #footer .advice{height: 6vw; line-height: 6vw;}
@@ -496,8 +497,8 @@ body{font-family: 'SUIT', sans-serif;}
 
     /* ---------햄버거---------- */
 
-    #section .quick{display: none;}
-    #section .quick>.quick_btn{display: none;}
+    #section .quick .quick_web{display: none;}
+    #section .quick .quick_btn{display: none;}
 
     /* ---------퀵----------- */
     #footer .advice{height: 7vw; line-height: 7vw;}
