@@ -36,14 +36,14 @@ $(document).ready(function(){
     });
 
 
-    // let autoSlide = setInterval(function(){
-    //     if(i == count-1){
-    //         i = 0;
-    //     }else{
-    //         i++;
-    //     }
-    //     show();
-    // },3000);
+    let autoSlide = setInterval(function(){
+        if(i == count-1){
+            i = 0;
+        }else{
+            i++;
+        }
+        show();
+    },3000);
 
     function show(){
         $(".wrap_nanum>div").stop().fadeOut();
@@ -70,6 +70,9 @@ $(document).ready(function(){
         }
     });
 
+    $(".mp4").click(function(){
+        $(".spon_mp4_gr").removeClass("doing").siblings().slideUp();
+    });
 
 
 
