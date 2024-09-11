@@ -62,6 +62,9 @@ body{font-family: 'SUIT', sans-serif;}
     /* padding-left: 30px;
     padding-right: 30px; */
 }
+#header .gnb .gnb_left .gnb_al>li:last-child>a{
+    color: #009B42;
+}
 #header .gnb .gnb_left .gnb_al>li:hover>a{
     color: #0D6D53;
     font-weight: 800;
@@ -355,6 +358,8 @@ body{font-family: 'SUIT', sans-serif;}
 /* --------------------------모바일버전-------------------------- */
 
 @media all and (max-width: 768px){
+
+    .cursor{display: none;}
     #header{
         height: 60px;
         border-bottom: 2px solid #0d6d532c;
@@ -468,6 +473,9 @@ body{font-family: 'SUIT', sans-serif;}
         background-repeat: no-repeat;
         background-image: url(../images/hamberger_plus.png);
         /* background-color: #009B42; */
+    }
+    #section .gnb_sidemenu .sidemenu_list>li:last-child p{
+        color: #009B42;
     }
     #section .gnb_sidemenu .sidemenu_list>li:hover p{
         color: #3AA064;
